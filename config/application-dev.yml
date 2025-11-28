@@ -1,25 +1,16 @@
-server:
-  port: 8080
-  servlet:
-    context-path: /api
-
 spring:
-  application:
-    name: spring
-  main:
-    banner-mode: off
+  config:
+    import:
+      - application.yml
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/temp
+    username: temp
+    password: temp
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 logging:
-  pattern:
-    file: "%d{dd-MM HH:mm} - %-5level - %logger{1} - %msg%n"
   file:
-    name: logs/app.log
+    name: logs/dev.log
   level:
-    root: WARN
-    org:
-      hibernate: error
-      springframework:
-        test: WARN
-        boot: WARN
-    com:
-      mak: INFO
+    "[com.mak]": DEBUG

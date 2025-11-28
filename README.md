@@ -7,9 +7,10 @@
 - Lombok
 - Actuator
 - Logback
+- VSCode Ready
 
 ## Description
 
-Spring 4 starter project with Lombok, Actuator, Logback
+Spring 4 starter project vscode ready with Lombok, Actuator, Logback
 
 - Mockito warning fixed in testing (`settings.json`) --FIXED--

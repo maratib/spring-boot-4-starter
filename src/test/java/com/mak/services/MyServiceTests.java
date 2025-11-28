@@ -25,7 +25,12 @@ public class MyServiceTests {
 
     @Test
     void Should_get_Message() {
-        log.info(myService.doSomething());
+        var message = myService.doSomething();
+        try {
+            log.info(message);
+        } finally {
+            log.info("Finally block executed");
+        }
     }
 
 }

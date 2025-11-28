@@ -1,13 +1,19 @@
 server:
   port: 8080
-  servlet:
-    context-path: /api
+  # servlet:
+  #   context-path: /api
 
 spring:
   application:
     name: spring
   main:
     banner-mode: off
+
+  datasource:
+    url: jdbc:h2:mem:test_db
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
 
 logging:
   pattern:
