@@ -25,9 +25,13 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+config/application-secrets.yml
+config/application-monitoring.yml
+
 logs/
 *.code-workspace
 .DS_Store
 *.log
 
 .fake
+.history
